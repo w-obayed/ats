@@ -2,8 +2,6 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import Banner from "@/components/Banner";
-import Accordian from "@/components/Accordian";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -28,9 +26,7 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Header />
-        <Banner />
         {children}
-        <Accordian />
         <Footer />
       </body>
     </html>

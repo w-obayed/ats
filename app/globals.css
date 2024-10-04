@@ -79,9 +79,34 @@
     @apply text-[16px] font-medium leading-5 text-[#C7C7C7];
   }
 }
+@layer components {
+  .heading-text {
+    @apply text-center text-5xl leading-[60px] font-normal;
+  }
+}
+@layer components {
+  .c-btn {
+    @apply w-56 text-center px-6 py-2 border-2 border-green-400 text-gray-800 rounded-full hover:bg-green-400 hover:text-white transition-colors shadow-sm;
+  }
+}
+@layer components {
+  .bg-b-color {
+    @apply before:content-['']  before:rounded-t-lg  before:absolute before:w-[80%] before:h-[80%] before:bottom-0 before:left-[50%] before:right-[50%] before:translate-x-[-50%] before:block;
+  }
+}
+@layer components {
+  .bg-a-color {
+    @apply after:content-['']  after:rounded-l-lg after:rounded-br-lg  after:absolute after:w-[95%] after:h-[93%] after:bottom-0 after:left-[50%] after:right-[50%] after:translate-x-[-47.5%] after:block;
+  }
+}
 @layer utilities {
   .bg-size-100 {
     background-size: 100%;
     background-position-y: 70px;
+  }
+}
+@layer utilities {
+  .translate {
+    transform: translate(-50%, -50%);
   }
 }

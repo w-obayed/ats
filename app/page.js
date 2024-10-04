@@ -1,7 +1,19 @@
+import Banner from "@/components/Banner";
+import Accordian from "@/components/Accordian";
+import Success from "@/components/Success";
+import Boost from "@/components/Boost";
+import Smart from "@/components/Smart";
+import Resume from "@/components/Resume";
+
 export default function Home() {
   return (
     <>
-      <h1>hello</h1>
+      <Banner />
+      <Success />
+      <Boost />
+      <Smart />
+      <Resume />
+      <Accordian />
     </>
   );
 }

@@ -105,11 +105,6 @@ const Footer = () => {
                 Company Overview
               </a>
             </li>
-            <li>
-              <a className="text-footer-text" href="#">
-                Company Overview
-              </a>
-            </li>
           </ul>
         </div>
       </div>
