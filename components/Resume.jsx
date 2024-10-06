@@ -7,8 +7,8 @@ import linkedin from "@/public/linkedin.png";
 
 const Resume = () => {
   return (
-    <div className="bg-[#f6f6f6] py-16 flex justify-between flex-row px-10">
-      <div className="w-[60%]">
+    <div className="bg-[#f6f6f6] py-16 flex md:justify-between md:flex-row flex-col px-4">
+      <div className="md:w-[60%] w-full">
         <div className="max-w-2xl mx-auto">
           <h1 className="text-[#141513] text-[39px] font-bold leading-[45px] pb-4">
             Job Winning <br />
@@ -51,15 +51,15 @@ const Resume = () => {
           </a>
         </div>
       </div>
-      <div className="flex flex-col w-[40%] h-[430px]">
-        <div className="bg-[#f6f6f6] border border-solid border-gray-400  rounded-3xl z-0 relative  before:z-[-1] before:bg-upground-color w-full h-full my-5 before:w-[93%] before:h-[90%] before:content-['']  before:rounded-xl before:absolute before:left-[50%] before:top-[50%] before:translate before:block">
+      <div className="flex flex-col md:w-[40%] w-full h-[430px] mt-14 md:mt-0">
+        <div className="bg-[#f6f6f6] border border-solid border-gray-400  rounded-3xl z-0 relative  before:z-[-1] before:bg-upground-color w-full h-full my-5 before:w-[93%] before:h-[90%] before:content-['']  before:rounded-xl before:absolute before:left-[50%] before:top-[50%] before:translate before:block max-w-[450px] mx-auto">
           <Image
             className=" absolute left-1/2 bottom-[50%] top-[37%] right-1/2 translate"
             src={resumeOne}
             alt=""
           />
           <Image
-            className="absolute top-[50%]  right-[60%] translate"
+            className="hidden lg:block absolute top-[50%]  right-[60%] translate"
             src={resumeTwo}
             alt=""
           />

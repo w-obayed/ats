@@ -100,7 +100,7 @@
   }
 }
 @layer utilities {
-  .bg-size-100 {
+  .bg-size-custom {
     background-size: 100%;
     background-position-y: 70px;
   }
@@ -108,5 +108,10 @@
 @layer utilities {
   .translate {
     transform: translate(-50%, -50%);
+  }
+}
+@layer utilities {
+  .bg-size-m {
+    background-size: 95%;
   }
 }

@@ -3,8 +3,8 @@ import person from "@/public/person.png";
 
 const Smart = () => {
   return (
-    <div className="container mx-auto py-20 ">
-      <div className="flex flex-row justify-between gap-x-10">
+    <div className="container mx-auto py-20 px-4">
+      <div className="flex md:flex-row flex-col md:justify-between gap-x-10 gap-y-10">
         <div className="flex flex-col flex-1">
           <Image className="w-full rounded-lg" src={person} alt="" />
         </div>
