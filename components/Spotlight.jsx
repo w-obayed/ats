@@ -32,12 +32,12 @@ const Spotlight = () => {
   ];
 
   return (
-    <div className="max-w-7xl mx-auto py-16 px-4">
-      <h1 className="text-[#141513] text-[39px] font-bold leading-[45px] pb-4 text-center">
+    <div className="container mx-auto py-28 px-4 md:px-6 lg:px-8 lg:ml-20">
+      <h1 className="text-[#141513] text-[25px] lg:text-[39px] font-bold leading-7 lg:leading-[45px] pb-5 text-center">
         In the spotlight
       </h1>
 
-      <p className="text-gray-500 text-lg mb-6 w-[65%] text-center mx-auto">
+      <p className="text-gray-500 w-full text-lg mb-6 lg:w-[65%] lg:text-center mx-auto">
         Stay updated with the latest trends, tips, and insights in business
         analytics. Explore our curated articles designed to empower your
         data-driven journey.

@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <footer className="bg-[#022D42]">
-      <div className="container mx-auto border-b px-4 lg:px-0 border-solid border-white pb-12">
+      <div className="container mx-auto px-4 md:px-6 lg:px-8 pb-12">
         <div className="flex justify-between flex-row flex-wrap gap-8 flex-1 py-20 sm:w-4/5 ml-0">
           <ul className="flex flex-col space-y-4">
             <li className="mb-2">
@@ -86,8 +86,8 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <div className="container mx-auto px-4 md:px-0">
-        <div className="flex md:justify-between space-y-3 items-center flex-col md:flex-row pt-4 pb-16">
+      <div className="container mx-auto px-4 md:px-6 lg:px-8">
+        <div className="flex md:justify-between space-y-3 items-center flex-col md:flex-row pt-4 pb-16 border-t">
           <p className="text-[#838B7F] text-sm font-normal">
             ©2023 NIMBUS · All rights reserved.
           </p>

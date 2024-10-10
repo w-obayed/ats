@@ -1,10 +1,10 @@
 const Boost = () => {
   return (
-    <div className="container mx-auto md:py-20 px-4">
+    <div className="container mx-auto md:py-20 px-4 md:px-6 lg:px-8">
       <div className="flex md:flex-row flex-col justify-between flex-wrap md:flex-nowrap gap-x-10 gap-y-10">
         <div className="flex flex-col flex-1 mt-10">
           <div className="flex flex-col space-y-5 lg:w-[80%] md:w-[100%]">
-            <h2 className="text-[#141513] text-[39px] font-bold leading-[45px]">
+            <h2 className="text-[#141513] text-[25px] lg:text-[39px] font-bold leading-7 lg:leading-[45px] w-[85%]">
               Boost Your Resume{" "}
               <span className="font-normal">to the Top of the Pile</span>
             </h2>

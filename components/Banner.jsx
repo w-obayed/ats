@@ -14,7 +14,7 @@ const Banner = ({ className, ...props }) => {
           <span className="text-[#01db2f]">Get Hired Faster</span> <br />
           with Smart ATS Matching!
         </h1>
-        <p className="text-[16px] md:text-[18px] font-normal text-white">
+        <p className="text-[16px] md:text-[18px] font-normal text-white w-[75%]">
           ATS helps you tailor your resume for any job, showcasing the essential
           skills and experience recruiters are looking for
         </p>

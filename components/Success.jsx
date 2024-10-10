@@ -1,19 +1,41 @@
-import mackbook from "@/public/MacBook.png";
+"use client";
+import { useState, useEffect } from "react";
+import Dashboard from "@/public/MacBook.png";
 import Image from "next/image";
 const Success = () => {
+  const [windowWidth, setWindowWidth] = useState(0);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+    setWindowWidth(window.innerWidth);
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  const imageWidth = Math.min(windowWidth * 0.9, 800);
+
   return (
-    <div className="container mx-auto md:py-20 py-0 mt-10 px-4">
+    <div className="container mx-auto md:py-20 py-0 mt-10 px-4 md:px-6 lg:px-8">
       <h1 className="md:heading-text leading-[30px] text-center !md:text-[36px] text-[26px]">
         AI-Driven Platform for Hiring & Job Seekers' Success
       </h1>
       <div className="flex md:flex-row flex-col justify-between flex-wrap md:flex-nowrap gap-x-10">
         <div className="flex flex-col flex-1 shrink-0">
           <div className="bg-custom-gradient relative z-0 before:bg-upground-color before:z-[-1] bg-b-color rounded-lg w-full h-[300px] flex justify-center items-end my-5">
-            <Image
-              className="h-[260px] xl:w-[470px] lg:w-[375px] md:w-[275px] sm:w-[470px] w-[260px] ml-10 shrink-0"
-              src={mackbook}
-              alt=""
-            />
+            <div className="h-64 w-[80%] flex justify-center">
+              <Image
+                className=" max-w-full h-full ml-10"
+                src={Dashboard}
+                alt="dashboard"
+                style={{ width: `${imageWidth}px` }}
+              />
+            </div>
           </div>
           <div className="flex flex-col p-4 space-y-4 lg:w-[80%] md:w-[100%]">
             <h2 className="text-[#282B27] text-[24px] font-bold leading-8">

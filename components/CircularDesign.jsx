@@ -10,7 +10,7 @@ import Image from "next/image";
 
 const CircularDesign = () => {
   return (
-    <div className="hidden  min-h-screen lg:flex items-center justify-center bg-gradient-to-b from-[#012F46] to-[#005260]">
+    <div className="hidden  min-h-screen lg:flex items-center justify-center bg-gradient-to-b from-[#012F46] to-[#005260] mt-28">
       <div className="relative w-96 h-96 lg:w-[700px] lg:h-[600px] flex items-center justify-center">
         <div className="border-[5px] border-t-0 border-l-0 border-r-0 border-solid rounded-full p-8 border-green-400 relative before:content-[''] before:w-8 before:h-8 before:bg-white before:rounded-full before:absolute before:bottom-[65px] before:left-3/2">
           <div className="w-[380px] h-[380px] py-10 px-4 bg-white rounded-full flex flex-col justify-center items-center text-center shadow-lg relative z-10">

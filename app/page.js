@@ -14,8 +14,8 @@ export default function Home() {
       <Success />
       <Boost />
       <Smart />
-      <Resume />
       <CircularDesign />
+      <Resume />
       <Spotlight />
       <Accordian />
     </>

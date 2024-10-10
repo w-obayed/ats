@@ -7,15 +7,15 @@ import linkedin from "@/public/linkedin.png";
 
 const Resume = () => {
   return (
-    <div className="bg-[#f6f6f6] py-16 flex md:justify-between md:flex-row flex-col px-4">
+    <div className="bg-[#f6f6f6] py-16 flex md:justify-between md:flex-row flex-col px-4 md:px-6 lg:px-8 mt-16">
       <div className="md:w-[60%] w-full">
         <div className="max-w-2xl mx-auto">
-          <h1 className="text-[#141513] text-[39px] font-bold leading-[45px] pb-4">
-            Job Winning <br />
+          <h1 className="text-[#141513] lg:text-[39px] text-[25px] font-bold leading-7 lg:leading-[45px] pb-4">
+            Job Winning <br className="hidden lg:block" />
             <span className="font-normal">Resume Templates</span>
           </h1>
 
-          <p className="text-gray-500 text-lg mb-6">
+          <p className="text-gray-500 text-lg mb-6 w-4/5">
             Get hands-on with our advanced AI-driven features and see the
             difference for yourself. Start your free trial today.
           </p>
@@ -46,7 +46,7 @@ const Resume = () => {
               </span>
             </li>
           </ul>
-          <a className="c-btn" href="#">
+          <a className="c-btn lg:ml-[-30px]" href="#">
             CHECK ATS SCORE
           </a>
         </div>
