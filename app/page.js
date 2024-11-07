@@ -32,6 +32,8 @@ import {
 import { Plus } from "lucide-react";
 import { Minus } from "lucide-react";
 import { useEffect, useState } from "react";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 export default function Home({ className, ...props }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -81,6 +83,7 @@ export default function Home({ className, ...props }) {
   ];
   return (
     <>
+      <Header />
       <div className="z-0  bg-gradient-to-b from-[#093042] to-[rgb(9,109,115)] flex flex-wrap md:flex-nowrap">
         <div className="flex justify-center space-y-5 flex-col w-full md:w-1/2 md:ml-10 md:space-y-10 px-4 md:px-0 mt-4">
           <h1 className="text-3xl lg:text-3xl md:font-bold text-white">
@@ -561,6 +564,7 @@ export default function Home({ className, ...props }) {
           </Accordion>
         </div>
       </div>
+      <Footer />
     </>
   );
 }

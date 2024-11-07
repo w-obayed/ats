@@ -40,7 +40,7 @@ const Header = () => {
 
           {/* HR Login */}
           <div className="hidden md:flex items-center space-x-2">
-            <Link className="flex gap-[8px]" href="#">
+            <Link className="flex gap-[8px]" href="/login">
               <Image className="w-[25px]" src={contact} alt="Contact Icon" />
               <span className="font-medium text-lg">HR Login</span>
             </Link>
@@ -79,7 +79,7 @@ const Header = () => {
               <li className="px-4 py-2 class-h rounded-sm hover:bg-slate-300">
                 <Link
                   className="flex gap-[8px]"
-                  href="#"
+                  href="/login"
                   onClick={toggleMobileMenu}
                 >
                   <Image
