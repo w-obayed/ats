@@ -52,3 +52,10 @@ export async function login(state, formData) {
     return error.message;
   }
 }
+
+export async function GoogleLogin() {
+  await signIn("google");
+}
+export async function GithubLogin() {
+  await signIn("github");
+}

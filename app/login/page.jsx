@@ -1,11 +1,15 @@
 "use client";
 
-import { SubmitButton } from "@/components/Button";
+import {
+  GitHubAuthButton,
+  GoogleAuthButton,
+  SubmitButton,
+} from "@/components/Button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Label } from "@/components/ui/label";
 import Link from "next/link";
-import { useFormState, useFormStatus } from "react-dom";
-import { login } from "../actions/auths";
+import { useFormState } from "react-dom";
+import { GithubLogin, GoogleLogin, login } from "../actions/auths";
 
 const LoginForm = () => {
   const [state, action] = useFormState(login, undefined);
@@ -54,6 +58,17 @@ const LoginForm = () => {
                 Sign up
               </Link>
             </p>
+            <p className="py-5 text-xl uppercase before:block text-center relative before:absolute before:top-[50%] before:left-0 before:w-[45%] before:h-[1px] before:bg-gray-700 after:absolute after:top-[50%] after:right-0 after:w-[45%] after:h-[1px] after:bg-gray-700">
+              or
+            </p>
+            <div>
+              <form action={GoogleLogin} className="w-full">
+                <GoogleAuthButton />
+              </form>
+              <form action={GithubLogin} className="w-full space-y-5">
+                <GitHubAuthButton />
+              </form>
+            </div>
           </CardContent>
         </Card>
       </div>
